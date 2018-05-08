@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Get value from user</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script type="text/javascript">
+
+            function show_result()
+            {
+
+                var name = document.getElementById('name').value;
+                var email = document.getElementById('email').value;
+                alert(name + " " + email);
+            }
+
+
+        </script>
+
+        Name <input type="text" name="abc"  id="name">
+        Email <input type="text" name="abc"  id="email">
+        <input type="button" name="clk" value="Click"  onclick="//show_result()">
+
+        <hr>
+        <hr>
+        
+        <script >
+            
+            function search()
+            {
+                
+                var text = document.getElementById('word').value;
+                
+                document.getElementById('textdisplay').innerText=text;
+                
+            }
+            
+        </script>
+
+        Search <input type="text" name="src" id="word"  onkeyup="search()">
+        <hr>
+        <span id="textdisplay"></span>
+        
+        
+    </body>
+</html>

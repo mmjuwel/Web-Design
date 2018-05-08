@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="wpr">
+            <div id="logo"> </div> 
+            <div id="bnr"> </div>
+        
+        </div>
+       
+
+        <script type="text/javascript">
+
+            function wapper() {
+
+                document.getElementById('wpr').style.width = '700px';
+                document.getElementById('wpr').style.height = '400px';
+                document.getElementById('wpr').style.backgroundColor = 'blue';
+
+            }
+            
+             function logo() {
+
+                document.getElementById('logo').style.width = '200px';
+                document.getElementById('logo').style.height = '100px';
+                document.getElementById('logo').style.backgroundColor = 'red';
+                document.getElementById('logo').style.float = 'left';
+
+            }
+                function banner() {
+
+                document.getElementById('bnr').style.width = '500px';
+                document.getElementById('bnr').style.height = '100px';
+                document.getElementById('bnr').style.backgroundColor = 'yellow';
+                document.getElementById('bnr').style.float = 'left';
+
+            }
+            
+            
+            
+         window.onload =function(){
+                
+                wapper();
+                logo();
+                banner();
+            }
+
+
+
+
+        </script>
+
+    </body>
+</html>

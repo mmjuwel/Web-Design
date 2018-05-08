@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Efftect</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <button onclick="effect()">Click</button>
+        <p id="eff">Mansur Mahamud </p> 
+        <embed src="rain.gif">
+        <script type="text/javascript">
+
+            var a = 0;
+
+            function effect() {
+
+
+                if (a == 0) {
+                    document.getElementById('eff').style.color = 'red';
+                    document.getElementById('eff').style.fontSize = '20px';
+                    document.getElementById('eff').style.transition = '1s';
+                    a=1;
+                }
+                else if (a==1)
+                {
+                    document.getElementById('eff').style.color = 'green';
+                    document.getElementById('eff').style.fontSize = '40px';
+                    document.getElementById('eff').style.transition = '1s';
+                    a=2;
+                }
+                
+                 else if (a==2)
+                {
+                    document.getElementById('eff').style.color = 'black';
+                    document.getElementById('eff').style.fontSize = '16px';
+                    document.getElementById('eff').style.transition = '1s';
+                    
+                }
+            }
+
+
+        </script>
+
+    </body>
+</html>

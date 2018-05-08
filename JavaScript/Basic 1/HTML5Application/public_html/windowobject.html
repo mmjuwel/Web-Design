@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+            
+            function goalert(){
+                
+               window.alert("Hello JS");
+            }
+            
+            function goconfirm(){
+                var message= confirm("Are you sure to delete ???");
+                
+                if(message==true)  //true means click on ok
+                {
+                    window.alert("Deleted");
+                }else{
+                    window.alert("Did Not Deleted");
+                }
+            }
+            function goprompt(){
+                var msg=prompt("Enter Your name");
+                alert("My name is: "+msg);
+            }
+            function goopen(){
+                
+                open("http://www.espncricinfo.com/");
+            }
+            document.writeln("hello");
+            document.writeln("hello");
+            
+            
+        </script>
+        
+    </head>
+    <body>
+        
+        Alert: <input type="button" value="Click" onclick="goalert()"> <br><br>
+        Confirm: <input type="button" value="Click" onclick="goconfirm()"> <br><br>
+        Prompt: <input type="button" value="Click" onclick="goprompt()"> <br><br>
+        Open: <input type="button" value="Click" onclick="goopen()"> <br><br>
+        
+    </body>
+</html>

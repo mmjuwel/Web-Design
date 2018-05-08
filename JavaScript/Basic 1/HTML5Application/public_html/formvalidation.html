@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            function validation() {
+
+                name = document.getElementById("name").value;
+                
+                
+                password = document.getElementById("psw").value;
+                rpassword = document.getElementById("rpsw").value;
+
+                if (name === null || name === "" || password === null || password === "")
+                {
+                    alert("Enter vale to required field!!");
+                    return false;
+                } else if (password.length < 6) {
+                    alert("Password Must be at ksit 6 Character");
+                    return false;
+
+                } else if (password !== rpassword) {
+                    alert("Password didnt matcg both");
+                    return false;
+                }
+              
+            }
+function emailcheck(){
+    
+      email= document.getElementById("email");
+      ad=email.indexof("@");
+      dot=email.indexof(".");
+      if(add<1 || dot< ad+2)
+      {
+          msg="Enter Valid email";
+          document.getElementById("msg").innerHTML=msg;
+          return false;
+      }
+}
+
+        </script>
+
+
+        <hr>
+        <form action="" method="post"    onsubmit="return validation()" >
+            Name: <input type="text" name="name" id="name"><br><br>
+            Email: <input type="email" name="email" id="email" onblur="return emailcheck()" >
+            <span id="msg">
+            </span>
+            <br><br>
+            Password: <input type="password" name="psw" id="psw"> <br><br>
+            Repeat Password: <input type="password" name="rpsw" id="rpsw">
+            
+            <br><br>
+            <input type="submit" value="Save" id="btn_save">
+
+        </form>
+
+
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <script>
+
+
+            function comment() {
+                comment = "Name: <input type='text' > <br> Comment: <textarea row='5' col='5'> </textarea> "
+                document.getElementById("com").innerHTML = comment;
+            }
+            
+            
+            function checkpsw() {
+                msg1 = document.myform.psw.value.length;
+                if (msg1 < 5)
+                {
+                    msg = "Poor";
+                } else {
+                    msg = "Good";
+                }
+                
+              document.getElementById("psw").innerHTML=msg;
+
+            }
+
+        </script>
+
+
+        <input type="button" value="Click" onclick="comment()">
+        <hr>
+        <form name="myform">
+            Password  <input type="password" id="p" name="psw" onkeyup="checkpsw()">
+            <span id="psw"></span>
+        </form>
+        <hr>
+        <div id="com"> </div>
+
+    </body>
+</html>

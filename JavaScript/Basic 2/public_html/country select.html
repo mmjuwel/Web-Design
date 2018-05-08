@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+
+
+
+
+        <script type="text/javascript">
+
+            function selectcountry() {
+
+                var country = {
+                    'BD': 'Bangladesh',
+                    'Dk': 'Denmark',
+                    'Aus': 'Australia',
+                }
+                for (key in country)
+                {
+
+                    document.write("<option>" + country[key] + "</option>" + '<br>');
+
+                }
+
+
+
+            }
+
+
+        </script>
+
+        <hr>
+
+
+        <select>
+
+            <option> Country List   </option>
+            <script type="text/javascript">
+
+                selectcountry();
+            </script>
+        </select>  
+
+        <hr>
+    <!-- dynamic cell -->
+        
+    <script type="text/javascript">
+    
+    function addcell(){
+       var table= document.getElementById('tbl');
+       var row= table.insertRow(0);
+       var cel1= row.insertCell(0);
+       var cel2= row.insertCell(1);
+       
+       cel1.innerHTML='<input type="text" placeholder="Username">';
+       cel2.innerHTML='<input type="text" placeholder="Passwoard">';
+        
+    }
+    
+    function removecell(){
+        
+     var  table=  document.getElementById('tbl');
+      var  row= table.deleteRow(-1);
+        
+    }
+    </script>
+    
+    <button type="button" onclick="addcell()">Add Cell</button>
+    <button type="button" onclick="removecell()">Remove Cell</button>
+    
+    <table id="tbl">
+        <tr>
+            <td><input type="text" placeholder="Username"></td>
+            <td><input type="text" placeholder="Passwoard"></td>
+        </tr>
+
+    </table>
+
+
+    </body>
+</html>

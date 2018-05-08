@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+            
+             function show(){
+                 
+                 var msg= document.myform.name.value;
+                 alert(msg);
+             }
+             
+             function show1(){
+                 x= document.getElementById("num").value;
+                 alert(x*3);
+             }
+             function show2(){
+                 var m= document.getElementsByName("gender");
+               alert(m.length);
+                 
+             }
+             function show3(){
+                 var m= document.getElementsByTagName("br");
+               alert(m.length);
+                 
+             }
+            
+        </script>
+        
+    </head>
+    <body>
+        <form name="myform">
+             Name: <input type="text" name="name" >
+             <input type="button" value="click" onclick="show()" >   <br><br>
+             Number: <input type="text" name="num" id="num">
+                          <input type="button" value="click" onclick="show1()" ><br><br>
+                          
+                          Male: <input type="radio" name="gender" value="Male">
+                          Female: <input type="radio" name="gender" value="Female">
+                          <input type="button" value="click" onclick="show2()" ><br><br>
+                          
+                          <p>Hello jS</p>
+                          <p>Hello java</p>
+                          <p>Hello HTML</p>
+                          <p>Hello CSS</p>
+                          <p>Hello PHP</p>
+                          <p>Hello C</p>
+                          
+                          <input type="button" value="click" onclick="show3()" ><br><br>
+                          
+                          <hr><hr>
+                          
+
+        </form>
+    </body>
+</html>

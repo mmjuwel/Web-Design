@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Inner Html</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+<!--     innerHTML .... Making Comment box-->
+        
+        <button onclick="comment()"> Comment</button>
+        <span id="com"></span>
+        
+        <script type="text/javascript">
+            var a=0;
+            function comment (){
+           if(a==0){     
+          var     comment= "<br>"+'Name'+ "<input type='text'>"+"<br>"+"Comment"+"<br>"+"<textarea rows='10' cols='40'></textarea>"+"<br>";
+               
+               document.getElementById('com').innerHTML=comment;
+               a=1;
+           }
+           else{
+               document.getElementById('com').innerHTML='';
+               a=0;
+           }
+            }
+            
+            
+        </script>
+        
+        
+        <hr>
+         
+<!--        inner Text .... checking Password Strength-->
+        
+        Password <input type="text"  id="pass"  onkeyup="checkpass()">
+        <span id="res"></span>
+        
+        
+        <script type="text/javascript">
+          
+
+            function checkpass(){
+                
+              var password=document.getElementById('pass').value.length;
+              if(password<=3){
+                  document.getElementById('res').innerText='Possr';
+              }
+               else  if(password>3 && password<=6){
+                  document.getElementById('res').innerText='Medium';
+              }
+                else  if(password>6){
+                  document.getElementById('res').innerText='Strong';
+              }
+              
+            }
+            
+        </script>
+       
+        
+   
+        
+    </body>
+</html>

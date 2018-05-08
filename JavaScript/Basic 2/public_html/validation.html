@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!-- form validation  -->
+        <script type="text/javascript">
+    function validation(){
+        
+        var name=document.myform.name.value;
+        
+        var email=document.myform.email.value;
+        var emailexp=/[a-z,0-9,_]+@+[a-z]+||[.]+[a-z]{2,3}/;    
+        
+        
+        var password=document.myform.psw.value.length;
+        var password1=document.myform.psw.value;
+        var con_password=document.myform.con_psw.value;
+       
+        if (name===null || name===''){
+            
+            alert("Name Cannt be blank");
+            return false;
+        }
+        
+        if (email.match(emailexp)){
+            return true;
+        }
+        
+
+        if( password<5){
+             alert("Password Must be more than 5 character");
+            return false;
+        }
+        
+        if(password1===con_password){
+            
+            return true;
+        }
+        else{
+             alert("Password and Condirm Password Must be same");
+            return false;
+        }
+    }
+    
+        </script>
+        
+        
+        <form name="myform" action="" method="post"  onsubmit="return validation()" >
+            User Name <input type="text" name="name"> <br><br>
+            Email <input type="email" name="email"> <br><br>
+            Password <input type="text" name="psw"> <br><br>
+           Confirm Password <input type="text" name="con_psw"> <br><br>
+            
+            <input type="submit" value="Submit">
+            
+            
+        </form>
+        
+    </body>
+</html>
