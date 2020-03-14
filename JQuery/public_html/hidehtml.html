@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>JQuery Hide</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="jquery-3.2.1.min.js"></script>
+
+    </head>
+    <body>
+        <script type="text/javascript">
+
+
+            $(document).ready(function () {
+
+                // to hide the window
+                $('#btn1').click(function () {
+                    $('#div1').hide();
+
+                });
+
+                $('#btn2').click(function () {
+                    $('#div2').hide();
+
+                });
+
+//        to shoe the windoe
+
+                $('#btn3').click(function () {
+                    $('#div3').show();
+
+                });
+
+                $('#btn4').click(function () {
+                    $('#div4').show();
+
+                });
+                // tottgle window 
+                $('#btn5').click(function () {
+                    $('#div5').toggle();
+
+                });
+
+            });
+
+
+        </script>
+
+
+        <button  id="btn1" type="submit"> hide1</button>
+        <button  id="btn2" type="submit"> hide2</button>
+        <div  id="div1" style="width: 300px; height: 200px; background-color: blue; color: white"> My div ....  </div>
+        <div  id="div2" style="width: 300px; height: 200px; background-color: red; color: white"> My div ....  </div>
+
+
+        <button  id="btn3" type="submit"> show1</button>
+        <button  id="btn4" type="submit"> Show2</button>
+        <div  id="div3" style="width: 300px; height: 200px; background-color: orangered; color: white;display: none"> My div ....  </div>
+        <div  id="div4" style="width: 300px; height: 200px; background-color: blueviolet; color: white;display: none"> My div ....  </div>
+
+        <button  id="btn5" type="submit"> Toggle</button>
+        <div  id="div5" style="width: 300px; height: 200px; background-color: teal; color: white;"> My div ....  </div>
+
+
+    </body>
+</html>
